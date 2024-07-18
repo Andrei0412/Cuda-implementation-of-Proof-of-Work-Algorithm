@@ -1,0 +1,30 @@
+WARNING: Environment variable TMPDIR already has value [/export/home/acs/stud/a/andrei.simiocencu], will not forward new value [/tmp] from parent process environment
+INFO:    fuse: warning: library too old, some operations may not work
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (387) bind mounts
+make[1]: Entering directory '/export/home/acs/stud/a/andrei.simiocencu/asc-public/assignments/2-cuda_proof_of_work/cpu_miner'
+./cpu_miner
+Computed hash of tx1: 50293d1d5ce8eae30847cf45cc700a876a5a96b257d1f95cbd5437f7acdefd7c
+Expected hash of tx1: 50293d1d5ce8eae30847cf45cc700a876a5a96b257d1f95cbd5437f7acdefd7c
+Test 1 - sha256(tx1): PASS
+Computed hash of tx2: 5f7992732d6058789ecac6dca9494a35addd8e0e6985c099fb9160c5c437314f
+Expected hash of tx2: 5f7992732d6058789ecac6dca9494a35addd8e0e6985c099fb9160c5c437314f
+Test 1 - sha256(tx2): PASS
+
+Test 2 - sha256(sha256(tx1)+sha256(tx2)): PASS
+Test 2 - sha256(sha256(tx3)+sha256(tx4)): PASS
+Test 2 - Top Hash: PASS
+
+Test 3 - sha256 of tx2 100 times: PASS
+Test 3 - sha256 of tx2 50 times: PASS
+
+Test 4 - block_hash: PASS
+
+Block content without nonce: 000000000000000000034158a91c1876f5fc2add1e69641e908956ac9de45b93a0c60e1ff17667ec6256f2ba779519b7cbcade0f06215fe9717f24ea7e77e6d9
+Started searching nonces from 1 to 4294967295
+Hash found: 00000466c22e6ee57f6ec5a8122e67f82a381499a4b3069869819639bb22a2ee, lower than difficulty 0000099999999999999999999999999999999999999999999999999999999999, for nonce 515800
+Event started at: Tue May  7 22:59:39 2024
+Event ended at: Tue May  7 22:59:41 2024
+Execution time: 2.00 seconds
+
+make[1]: Leaving directory '/export/home/acs/stud/a/andrei.simiocencu/asc-public/assignments/2-cuda_proof_of_work/cpu_miner'

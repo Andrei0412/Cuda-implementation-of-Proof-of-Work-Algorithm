@@ -1,0 +1,10 @@
+WARNING: Environment variable TMPDIR already has value [/export/home/acs/stud/a/andrei.simiocencu], will not forward new value [/tmp] from parent process environment
+INFO:    fuse: warning: library too old, some operations may not work
+INFO:    underlay of /etc/localtime required more than 50 (76) bind mounts
+INFO:    underlay of /usr/bin/nvidia-smi required more than 50 (387) bind mounts
+make[1]: Entering directory '/export/home/acs/stud/a/andrei.simiocencu/asc-public/assignments/2-cuda_proof_of_work/cpu_miner'
+gcc -Iinclude -Wall -c src/sha256.c -o src/sha256.o
+gcc -Iinclude -Wall -c src/utils.c -o src/utils.o
+gcc -Iinclude -Wall -c src/cpu_miner.c -o src/cpu_miner.o
+gcc src/cpu_miner.o src/sha256.o src/utils.o -o cpu_miner -lm
+make[1]: Leaving directory '/export/home/acs/stud/a/andrei.simiocencu/asc-public/assignments/2-cuda_proof_of_work/cpu_miner'
